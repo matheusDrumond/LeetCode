@@ -5,7 +5,7 @@ The solutions will be added as I solve the problems, they'll all be commented
 
 ## LeetCode 75
 
-# 1 Merge Strings Alternately
+### 1 Merge Strings Alternately
 
 You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
 
@@ -35,7 +35,7 @@ word1: a b c d
 word2: p q
 merged: a p b q c d
 
-# 2 Greatest Common Divisor of Strings
+### 2 Greatest Common Divisor of Strings
 
 For two strings s and t, we say "t divides s" if and only if s = t + t + t + ... + t + t (i.e., t is concatenated with itself one or more times).
 
@@ -81,3 +81,17 @@ Kid 1 will always have the greatest number of candies, even if a different kid i
 Example 3:
 Input: candies = [12,1,12], extraCandies = 10
 Output: [true,false,true]
+
+### 4 - Can Place Flowers
+
+You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in adjacent plots.
+
+Given an integer array flowerbed containing 0's and 1's, where 0 means empty and 1 means not empty, and an integer n, return true if n new flowers can be planted in the flowerbed without violating the no-adjacent-flowers rule and false otherwise.
+
+Example 1:
+Input: flowerbed = [1,0,0,0,1], n = 1
+Output: true
+
+Example 2:
+Input: flowerbed = [1,0,0,0,1], n = 2
+Output: false
