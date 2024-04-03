@@ -95,3 +95,17 @@ Output: true
 Example 2:
 Input: flowerbed = [1,0,0,0,1], n = 2
 Output: false
+
+### 5 - Reverse Vowels of a String
+
+Given a string s, reverse only all the vowels in the string and return it.
+
+The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
+
+Example 1:
+Input: s = "hello"
+Output: "holle"
+
+Example 2:
+Input: s = "leetcode"
+Output: "leotcede"
