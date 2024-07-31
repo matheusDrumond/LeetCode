@@ -66,11 +66,11 @@ Input: candies = [2,3,5,1,3], extraCandies = 3
 Output: [true,true,true,false,true]
 Explanation: If you give all extraCandies to:
 
-- Kid 1, they will have 2 + 3 = 5 candies, which is the greatest among the kids.
-- Kid 2, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
-- Kid 3, they will have 5 + 3 = 8 candies, which is the greatest among the kids.
-- Kid 4, they will have 1 + 3 = 4 candies, which is not the greatest among the kids.
-- Kid 5, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
+-   Kid 1, they will have 2 + 3 = 5 candies, which is the greatest among the kids.
+-   Kid 2, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
+-   Kid 3, they will have 5 + 3 = 8 candies, which is the greatest among the kids.
+-   Kid 4, they will have 1 + 3 = 4 candies, which is not the greatest among the kids.
+-   Kid 5, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
 
 Example 2:
 Input: candies = [4,2,1,1,2], extraCandies = 1
@@ -258,17 +258,17 @@ Input: nums = [1,2,3,4], k = 5
 Output: 2
 Explanation: Starting with nums = [1,2,3,4]:
 
-- Remove numbers 1 and 4, then nums = [2,3]
-- Remove numbers 2 and 3, then nums = []
-  There are no more pairs that sum up to 5, hence a total of 2 operations.
+-   Remove numbers 1 and 4, then nums = [2,3]
+-   Remove numbers 2 and 3, then nums = []
+    There are no more pairs that sum up to 5, hence a total of 2 operations.
 
 Example 2:
 Input: nums = [3,1,3,4,3], k = 6
 Output: 1
 Explanation: Starting with nums = [3,1,3,4,3]:
 
-- Remove the first two 3's, then nums = [1,4,3]
-  There are no more pairs that sum up to 6, hence a total of 1 operation.
+-   Remove the first two 3's, then nums = [1,4,3]
+    There are no more pairs that sum up to 6, hence a total of 1 operation.
 
 ### 14 - Maximum Average Subarray I
 
@@ -462,7 +462,7 @@ Apply Operation 1: "cabbba" -> "caabbb"
 Apply Operation 2: "caabbb" -> "baaccc"
 Apply Operation 2: "baaccc" -> "abbccc"
 
-## 23 - Equal Row and Column Pairs
+### 23 - Equal Row and Column Pairs
 
 Given a 0-indexed n x n integer matrix grid, return the number of pairs (ri, cj) such that row ri and column cj are equal.
 
@@ -472,19 +472,21 @@ Example 1:
 Input: grid = [[3,2,1],[1,7,6],[2,7,7]]
 Output: 1
 Explanation: There is 1 equal row and column pair:
-- (Row 2, Column 1): [2,7,7]
+
+-   (Row 2, Column 1): [2,7,7]
 
 Example 2:
 Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]
 Output: 3
 Explanation: There are 3 equal row and column pairs:
-- (Row 0, Column 0): [3,1,2,2]
-- (Row 2, Column 2): [2,4,2,2]
-- (Row 3, Column 2): [2,4,2,2]
+
+-   (Row 0, Column 0): [3,1,2,2]
+-   (Row 2, Column 2): [2,4,2,2]
+-   (Row 3, Column 2): [2,4,2,2]
 
 ### 24 - Removing Stars From a String
 
-You are given a string s, which contains stars *.
+You are given a string s, which contains stars \*.
 
 In one operation, you can:
 
@@ -498,16 +500,17 @@ The input will be generated such that the operation is always possible.
 It can be shown that the resulting string will always be unique.
 
 Example 1:
-Input: s = "leet**cod*e"
+Input: s = "leet\**cod*e"
 Output: "lecoe"
 Explanation: Performing the removals from left to right:
-- The closest character to the 1st star is 't' in "leet**cod*e". s becomes "lee*cod*e".
-- The closest character to the 2nd star is 'e' in "lee*cod*e". s becomes "lecod*e".
-- The closest character to the 3rd star is 'd' in "lecod*e". s becomes "lecoe".
-There are no more stars, so we return "lecoe".
+
+-   The closest character to the 1st star is 't' in "leet\**cod*e". s becomes "lee*cod*e".
+-   The closest character to the 2nd star is 'e' in "lee*cod*e". s becomes "lecod\*e".
+-   The closest character to the 3rd star is 'd' in "lecod\*e". s becomes "lecoe".
+    There are no more stars, so we return "lecoe".
 
 Example 2:
-Input: s = "erase*****"
+Input: s = "erase**\***"
 Output: ""
 Explanation: The entire string is removed, so we return an empty string.
 
@@ -575,7 +578,38 @@ Output
 
 Explanation
 RecentCounter recentCounter = new RecentCounter();
-recentCounter.ping(1);     // requests = [1], range is [-2999,1], return 1
-recentCounter.ping(100);   // requests = [1, 100], range is [-2900,100], return 2
-recentCounter.ping(3001);  // requests = [1, 100, 3001], range is [1,3001], return 3
-recentCounter.ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
+recentCounter.ping(1); // requests = [1], range is [-2999,1], return 1
+recentCounter.ping(100); // requests = [1, 100], range is [-2900,100], return 2
+recentCounter.ping(3001); // requests = [1, 100, 3001], range is [1,3001], return 3
+recentCounter.ping(3002); // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
+
+### 28 - Dota2 Senate
+
+In the world of Dota2, there are two parties: the Radiant and the Dire.
+
+The Dota2 senate consists of senators coming from two parties. Now the Senate wants to decide on a change in the Dota2 game. The voting for this change is a round-based procedure. In each round, each senator can exercise one of the two rights:
+
+Ban one senator's right: A senator can make another senator lose all his rights in this and all the following rounds.
+Announce the victory: If this senator found the senators who still have rights to vote are all from the same party, he can announce the victory and decide on the change in the game.
+Given a string senate representing each senator's party belonging. The character 'R' and 'D' represent the Radiant party and the Dire party. Then if there are n senators, the size of the given string will be n.
+
+The round-based procedure starts from the first senator to the last senator in the given order. This procedure will last until the end of voting. All the senators who have lost their rights will be skipped during the procedure.
+
+Suppose every senator is smart enough and will play the best strategy for his own party. Predict which party will finally announce the victory and change the Dota2 game. The output should be "Radiant" or "Dire".
+
+Example 1:
+Input: senate = "RD"
+Output: "Radiant"
+Explanation:
+The first senator comes from Radiant and he can just ban the next senator's right in round 1.
+And the second senator can't exercise any rights anymore since his right has been banned.
+And in round 2, the first senator can just announce the victory since he is the only guy in the senate who can vote.
+
+Example 2:
+Input: senate = "RDD"
+Output: "Dire"
+Explanation:
+The first senator comes from Radiant and he can just ban the next senator's right in round 1.
+And the second senator can't exercise any rights anymore since his right has been banned.
+And the third senator comes from Dire and he can ban the first senator's right in round 1.
+And in round 2, the third senator can just announce the victory since he is the only guy in the senate who can vote.
