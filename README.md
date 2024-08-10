@@ -5,7 +5,7 @@ The solutions will be added as I solve the problems, they'll all be commented
 
 ## LeetCode 75
 
-### 1 Merge Strings Alternately
+### 1 - 1768. Merge Strings Alternately
 
 You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
 
@@ -35,7 +35,7 @@ word1: a b c d
 word2: p q
 merged: a p b q c d
 
-### 2 Greatest Common Divisor of Strings
+### 2 - 1071. Greatest Common Divisor of Strings
 
 For two strings s and t, we say "t divides s" if and only if s = t + t + t + ... + t + t (i.e., t is concatenated with itself one or more times).
 
@@ -53,7 +53,7 @@ Example 3:
 Input: str1 = "LEET", str2 = "CODE"
 Output: ""
 
-### 3 - Kids With the Greatest Number of Candies
+### 3 - 1431. Kids With the Greatest Number of Candies
 
 There are n kids with candies. You are given an integer array candies, where each candies[i] represents the number of candies the ith kid has, and an integer extraCandies, denoting the number of extra candies that you have.
 
@@ -82,7 +82,7 @@ Example 3:
 Input: candies = [12,1,12], extraCandies = 10
 Output: [true,false,true]
 
-### 4 - Can Place Flowers
+### 4 - 605. Can Place Flowers
 
 You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in adjacent plots.
 
@@ -96,7 +96,7 @@ Example 2:
 Input: flowerbed = [1,0,0,0,1], n = 2
 Output: false
 
-### 5 - Reverse Vowels of a String
+### 5 - 345. Reverse Vowels of a String
 
 Given a string s, reverse only all the vowels in the string and return it.
 
@@ -110,7 +110,7 @@ Example 2:
 Input: s = "leetcode"
 Output: "leotcede"
 
-### 6 - Reverse Words in a String
+### 6 - 151. Reverse Words in a String
 
 Given an input string s, reverse the order of the words.
 
@@ -134,7 +134,7 @@ Input: s = "a good example"
 Output: "example good a"
 Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
 
-### 7 - Product of Array Except Self
+### 7 - 238. Product of Array Except Self
 
 Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
 
@@ -150,7 +150,7 @@ Example 2:
 Input: nums = [-1,1,0,-3,3]
 Output: [0,0,9,0,0]
 
-### 8 - Increasing Triplet Subsequence
+### 8 - 334. Increasing Triplet Subsequence
 
 Given an integer array nums, return true if there exists a triple of indices (i, j, k) such that i < j < k and nums[i] < nums[j] < nums[k]. If no such indices exists, return false.
 
@@ -169,7 +169,7 @@ Input: nums = [2,1,5,0,4,6]
 Output: true
 Explanation: The triplet (3, 4, 5) is valid because nums[3] == 0 < nums[4] == 4 < nums[5] == 6.
 
-### 9 - String Compression
+### 9 - 443. String Compression
 
 Given an array of characters chars, compress it using the following algorithm:
 
@@ -198,7 +198,7 @@ Input: chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
 Output: Return 4, and the first 4 characters of the input array should be: ["a","b","1","2"].
 Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12".
 
-### 10 - Move Zeroes
+### 10 - 238. Move Zeroes
 
 Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
@@ -212,7 +212,7 @@ Example 2:
 Input: nums = [0]
 Output: [0]
 
-### 11 - Is Subsequence
+### 11 - 392. Is Subsequence
 
 Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
 
@@ -226,7 +226,7 @@ Example 2:
 Input: s = "axc", t = "ahbgdc"
 Output: false
 
-### 12 - Container With Most Water
+### 12 - 11. Container With Most Water
 
 You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
 
@@ -245,7 +245,7 @@ Example 2:
 Input: height = [1,1]
 Output: 1
 
-### 13 - Max Number of K-Sum Pairs
+### 13 - 1679. Max Number of K-Sum Pairs
 
 You are given an integer array nums and an integer k.
 
@@ -270,7 +270,7 @@ Explanation: Starting with nums = [3,1,3,4,3]:
 -   Remove the first two 3's, then nums = [1,4,3]
     There are no more pairs that sum up to 6, hence a total of 1 operation.
 
-### 14 - Maximum Average Subarray I
+### 14 - 643. Maximum Average Subarray I
 
 You are given an integer array nums consisting of n elements, and an integer k.
 
@@ -285,7 +285,7 @@ Example 2:
 Input: nums = [5], k = 1
 Output: 5.00000
 
-### 15 - Maximum Number of Vowels in a Substring of Given Length
+### 15 - 1456. Maximum Number of Vowels in a Substring of Given Length
 
 Given a string s and an integer k, return the maximum number of vowel letters in any substring of s with length k.
 
@@ -306,7 +306,7 @@ Input: s = "leetcode", k = 3
 Output: 2
 Explanation: "lee", "eet" and "ode" contain 2 vowels.
 
-### 16 - Max Consecutive Ones III
+### 16 - 1004. Max Consecutive Ones III
 
 Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.
 
@@ -322,7 +322,7 @@ Output: 10
 Explanation: [0,0,1,1,1*,1*,1,1,1,1*,1,1,0,0,0,1,1,1,1]
 Numbers with \* were flipped from 0 to 1.
 
-### 17 - Longest Subarray of 1's After Deleting One Element
+### 17 - 1493. Longest Subarray of 1's After Deleting One Element
 
 Given a binary array nums, you should delete one element from it.
 
@@ -343,7 +343,7 @@ Input: nums = [1,1,1]
 Output: 2
 Explanation: You must delete one element.
 
-### 18 - Find the Highest Altitude
+### 18 - 1732. Find the Highest Altitude
 
 There is a biker going on a road trip. The road trip consists of n + 1 points at different altitudes. The biker starts his trip on point 0 with altitude equal 0.
 
@@ -359,7 +359,7 @@ Input: gain = [-4,-3,-2,-1,4,3,2]
 Output: 0
 Explanation: The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0.
 
-### 19 - Find Pivot Index
+### 19 - 724. Find Pivot Index
 
 Given an array of integers nums, calculate the pivot index of this array.
 
@@ -391,7 +391,7 @@ The pivot index is 0.
 Left sum = 0 (no elements to the left of index 0)
 Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
-### 20 - Find the Difference of Two Arrays
+### 20 - 2215. Find the Difference of Two Arrays
 
 Given two 0-indexed integer arrays nums1 and nums2, return a list answer of size 2 where:
 
@@ -413,7 +413,7 @@ Explanation:
 For nums1, nums1[2] and nums1[3] are not present in nums2. Since nums1[2] == nums1[3], their value is only included once and answer[0] = [3].
 Every integer in nums2 is present in nums1. Therefore, answer[1] = [].
 
-### 21 - Unique Number of Occurrences
+### 21 - 1207. Unique Number of Occurrences
 
 Given an array of integers arr, return true if the number of occurrences of each value in the array is unique or false otherwise.
 
@@ -430,7 +430,7 @@ Example 3:
 Input: arr = [-3,0,1,-3,1,1,1,-3,10,0]
 Output: true
 
-### 22 - Determine if Two Strings Are Close
+### 22 - 1657. Determine if Two Strings Are Close
 
 Two strings are considered close if you can attain one from the other using the following operations:
 
@@ -462,7 +462,7 @@ Apply Operation 1: "cabbba" -> "caabbb"
 Apply Operation 2: "caabbb" -> "baaccc"
 Apply Operation 2: "baaccc" -> "abbccc"
 
-### 23 - Equal Row and Column Pairs
+### 23 - 2352. Equal Row and Column Pairs
 
 Given a 0-indexed n x n integer matrix grid, return the number of pairs (ri, cj) such that row ri and column cj are equal.
 
@@ -484,7 +484,7 @@ Explanation: There are 3 equal row and column pairs:
 -   (Row 2, Column 2): [2,4,2,2]
 -   (Row 3, Column 2): [2,4,2,2]
 
-### 24 - Removing Stars From a String
+### 24 - 2390. Removing Stars From a String
 
 You are given a string s, which contains stars \*.
 
@@ -514,7 +514,7 @@ Input: s = "erase**\***"
 Output: ""
 Explanation: The entire string is removed, so we return an empty string.
 
-### 25 - Asteroid Collision
+### 25 - 735. Asteroid Collision
 
 We are given an array asteroids of integers representing asteroids in a row.
 
@@ -537,7 +537,7 @@ Input: asteroids = [10,2,-5]
 Output: [10]
 Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
 
-### 26 - Decode String
+### 26 - 394. Decode String
 
 Given an encoded string, return its decoded string.
 
@@ -559,7 +559,7 @@ Example 3:
 Input: s = "2[abc]3[cd]ef"
 Output: "abcabccdcdcdef"
 
-### 27 - Number of Recent Calls
+### 27 - 933. Number of Recent Calls
 
 You have a RecentCounter class which counts the number of recent requests within a certain time frame.
 
@@ -583,7 +583,7 @@ recentCounter.ping(100); // requests = [1, 100], range is [-2900,100], return 2
 recentCounter.ping(3001); // requests = [1, 100, 3001], range is [1,3001], return 3
 recentCounter.ping(3002); // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
 
-### 28 - Dota2 Senate
+### 28 - 692. Dota2 Senate
 
 In the world of Dota2, there are two parties: the Radiant and the Dire.
 
