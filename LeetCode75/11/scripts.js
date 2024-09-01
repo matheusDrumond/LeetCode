@@ -1,33 +1,32 @@
 /**
- * @param {string} s
- * @param {string} t
- * @return {boolean}
+ * @param {number[]} height
+ * @return {number}
  */
+var maxArea = function (height) {
+  // declaring the variables that will be the pointers and one that will store the largest area found
+  let left = 0,
+    right = height.length - 1,
+    maxArea = 0;
 
-// at the first moment, i thought about setting a variable with the position of 's' that we are comparing
-// and a loop that would be the pointer in the 't' string trying the letters
-// this algorithm worked, however the performance was not that good, so i looked for other ways to solve it
-// then i decided to change the loop i wa using, this way i replaced the 'for' loop for a 'while' loop
-// this way, the logic was the same, but the chosen loop was very importante to the performance of the algorithm
+  // here is the loop that will iterate the array
+  while (right > left) {
+    // to calculate the area, we need 2 measurements, length that is 'right - left'
+    // and the width that ,in this case, will be the shorter line, 'cause the water would stop there
+    // then we multiply length by width to have area
+    let length = right - left;
+    let width = Math.min(height[left], height[right]);
+    let area = length * width;
 
-var isSubsequence = function (s, t) {
-  // the pointers that will run through the strings (pointer1 in string 's' and pointer2 in string 't')
-  let pointer1 = 0,
-    pointer2 = 0;
-
-  // the loop that will do the verifications
-  while (pointer1 < s.length && pointer2 < t.length) {
-    // in case that both pointers point at equal elements, increase both
-    if (s[pointer1] === t[pointer2]) {
-      pointer1++;
-      pointer2++;
+    // if the found area is largest than the current maxArea, we replace it
+    if (area > maxArea) {
+      maxArea = length * width;
     }
-    // otherwise, the pointer2 keep increasing and looking for matching leeters in 't'
-    else {
-      pointer2++;
-    }
+
+    // at the end, we'll move the pointer that has the shortest line, or in case that both are the same height
+    // the coice of moving the right pointer is arbitrary 'cause it would make no difference to find a larger area
+    height[left] > height[right] ? right-- : left++;
   }
 
-  // at the end, return if the pointer found all the letters of 's'
-  return pointer1 === s.length;
+  // at the end, we return the largest area found
+  return maxArea;
 };
